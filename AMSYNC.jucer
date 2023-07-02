@@ -21,6 +21,7 @@
     <GROUP id="{887CF7E0-8510-0CD7-410E-5ED6BF6A97A8}" name="DSP">
       <FILE id="OXEzx9" name="bpm_to_hz.h" compile="0" resource="0" file="Source/bpm_to_hz.h"/>
       <FILE id="lQhfzc" name="bpm_to_samps.h" compile="0" resource="0" file="Source/bpm_to_samps.h"/>
+      <FILE id="fVhTK2" name="DDI.h" compile="0" resource="0" file="Source/DDI.h"/>
       <FILE id="wyj27Q" name="Fract_Delay_Line.h" compile="0" resource="0"
             file="Source/Fract_Delay_Line.h"/>
       <FILE id="yJCIv9" name="gain_block.h" compile="0" resource="0" file="Source/gain_block.h"/>
