@@ -43,12 +43,12 @@ public:
     void process(juce::dsp::AudioBlock<float> block) noexcept
     {
         //Mono
-        auto inputBlock  = block.getSingleChannelBlock(0);
-        auto outputBlock = block.getSingleChannelBlock(0);
-         auto numSamples  = block.getNumSamples();
+        auto inputBlock  =  block.getSingleChannelBlock(0);
+        auto outputBlock =  block.getSingleChannelBlock(0);
+        auto numSamples  =  block.getNumSamples();
          
-         auto* input  = inputBlock .getChannelPointer (0);
-         auto* output = outputBlock.getChannelPointer (0);
+        auto* input  = inputBlock .getChannelPointer (0);
+        auto* output = outputBlock.getChannelPointer (0);
          
         if(temp_freq != current_freq)
         {
