@@ -24,8 +24,8 @@ AMSYNCAudioProcessor::AMSYNCAudioProcessor()
 {
     amp_Sine_WaveL = std::make_unique<Sine_Wave>();
     amp_Sine_WaveR = std::make_unique<Sine_Wave>();
-    fract_delayLineL = std::make_unique<Fract_delay_line>();
-    fract_delayLineR = std::make_unique<Fract_delay_line>();
+    fract_delayLineL = std::make_unique<DDI>();
+    fract_delayLineR = std::make_unique<DDI>();
     mixGain_Delay_L = std::make_unique<Gain_Block>();
     mixGain_Delay_R = std::make_unique<Gain_Block>();
     mixGain_AmpMod_L = std::make_unique<Gain_Block>();

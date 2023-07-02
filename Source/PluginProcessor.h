@@ -16,6 +16,7 @@
 #include "BlockInterpol.h"
 #include "gain_block.h"
 #include "Fract_Delay_Line.h"
+#include "DDI.h"
 //==============================================================================
 /**
 */
@@ -69,8 +70,8 @@ private:
     juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
     std::unique_ptr<Sine_Wave> amp_Sine_WaveL;
     std::unique_ptr<Sine_Wave> amp_Sine_WaveR;
-    std::unique_ptr<Fract_delay_line> fract_delayLineL;
-    std::unique_ptr<Fract_delay_line> fract_delayLineR;
+    std::unique_ptr<DDI> fract_delayLineL;
+    std::unique_ptr<DDI> fract_delayLineR;
     float m_sampleRate = -1;
     std::unique_ptr<Gain_Block> mixGain_Delay_L;
     std::unique_ptr<Gain_Block> mixGain_Delay_R;
